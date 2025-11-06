@@ -17,30 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     DectPktFinder.cpp \
-    #bckpktfinder.cpp \
-    #bluetooth_packet.cpp \
-    #bluetooth_piconet.cpp \
     cdlgfind.cpp \
     cdlgjmp2addr.cpp \
-    #cpktfndigr2.cpp \
-    #crc16.cpp \
     datamodel.cpp \
     main.cpp \
-    dlgview.cpp \
-    #pktfinder.cpp
+    dlgview.cpp
 
 HEADERS += \
     DectPktFinder.h \
-    #bckpktfinder.h \
-    #bluetooth_packet.h \
-    #bluetooth_piconet.h \
     cdlgfind.h \
     cdlgjmp2addr.h \
-    #cpktfndigr2.h \
-    #crc16.h \
     datamodel.h \
-    dlgview.h \
-    #pktfinder.h
+    dlgview.h
 
 FORMS += \
     cdlgfind.ui \

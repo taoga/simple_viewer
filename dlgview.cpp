@@ -1,13 +1,14 @@
 #include "dlgview.h"
 #include "ui_dlgview.h"
-#include <QToolBar>
 #include <QMenuBar>
-#include <QDebug>
-#include <QSettings>
 #include <QDateTime>
 #include <QDesktopServices>
-#include <QUrl>
+#include <QDebug>
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QSettings>
+#include <QToolBar>
+#include <QUrl>
 #include "cdlgjmp2addr.h"
 #include "cdlgfind.h"
 
@@ -534,8 +535,8 @@ void DlgView::onFindSeries()
     {
         bool	bUseHex = tmpDlg.IsHex();
         int		nDigit = 0;
-        QStringList     query;
-        QRegExp         qrexpTemp("(\\,|\\ |\\;)"); //RegEx for ':' or ','
+        QStringList         query;
+        QRegularExpression  qrexpTemp("(\\,|\\ |\\;)"); //RegEx for ':' or ','
 
         m_cbaFindSeq.clear();
 
